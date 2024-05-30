@@ -1,0 +1,85 @@
+*{
+  margin:0; padding:0; box-sizing:border-box; font-family:'Gilroy';
+}
+ 
+html,body{
+  height:100%; width:100%;
+  font-weight: 900;
+  background-color: #111;
+}
+
+.parent{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8vw;
+}
+
+.Total_Score{
+  font-size: 4rem;
+}
+.Total_Score p{
+  color: transparent;
+  background-image: linear-gradient(to right,#462523 0,#cb9b51 22%,#f6e27a 45%,#f6f2c0 50%,#f6e27a 55%,#cb9b51 78%,#462523 100%);
+  -webkit-background-clip:text ;
+}
+
+.heding{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: transparent;
+  background-image: linear-gradient(to right,#462523 0,#cb9b51 22%,#f6e27a 45%,#f6f2c0 50%,#f6e27a 55%,#cb9b51 78%,#462523 100%);
+  -webkit-background-clip:text ;
+}
+
+.heding p{
+  font-size: 2rem;
+}
+.board{
+  display: grid;
+  grid-template-columns:repeat(5,100px) ;
+  row-gap: 12px; column-gap: 12px;
+}
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}

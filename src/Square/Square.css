@@ -1,0 +1,22 @@
+*{
+    margin:0; padding:0; box-sizing:border-box; font-family:'Gilroy';
+}
+ 
+html,body{
+    height:100%; width:100%;
+}
+
+.squrare_box{
+    height: 100px; width: 100px;
+    background: rgba(255, 245, 1, 0.21);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(6.7px);
+-webkit-backdrop-filter: blur(6.7px);
+border: 1px solid rgba(255, 245, 1, 0.91);
+    transition: all ease 0.4s;
+}
+
+.squrare_box:hover{
+    transform: translateY(-4px);
+}
